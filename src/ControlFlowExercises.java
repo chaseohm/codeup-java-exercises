@@ -1,4 +1,4 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
@@ -39,9 +39,17 @@ public class ControlFlowExercises {
 //            }
 //        }
 
+        System.out.print(" Enter an integer: ");
+        int userInput = scanner.nextInt();
+        System.out.println("Here is your table");
+        System.out.println("Number  |  Squared  |  Cubed");
+        System.out.println("------     -------     -----");
+        for (int count = 1; count <= userInput; count++){
+            System.out.println(count   +"       |     "+   count*count   +"       |     "+   count*count*count);
+        }
+//        System.out.println(userInput);
+//        System.out.println(userInput * userInput);
+//        System.out.println(userInput * userInput * userInput);
 
-        System.out.println("Please enter an integer: ");
-        String userInput = scanner.next();
-        System.out.println("You gave me " + userInput);
     }
 }
