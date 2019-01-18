@@ -22,6 +22,9 @@ public class Input {
         }
         return input;
     }
+    public static void waitForEnter(){
+        scanner.nextLine();
+    }
     public static int getInt(){
         return scanner.nextInt();
     }
